@@ -1,0 +1,81 @@
+.todo-card {
+  background-color: #161616;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  height: 276px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 6px;
+  border: 1px solid #555;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-row button {
+  background-color: #353535;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-row button:hover {
+  background-color: #990e0e;
+}
+
+.task-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.task-list li.task {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 28px;
+}
+
+.task-list li.task span {
+  flex: 1;
+  word-break: break-word;
+}
+
+.task-list li.task.done {
+  background-color: #3b3b3b;
+}
+
+.task-list li.task.done span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-list li.task button {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

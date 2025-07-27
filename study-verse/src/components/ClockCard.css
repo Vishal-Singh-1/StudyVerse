@@ -1,0 +1,30 @@
+.clock-card {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family : monospace;
+  border-radius: 50%;
+
+  background-image: url("/Mount.png"); /* image from public folder */
+  background-size: cover;   /* ensures image fills the container */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6); /* optional: darken */
+}
+
+.clock-card .time {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.clock-card .date {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-top: 33px;
+}

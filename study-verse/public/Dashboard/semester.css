@@ -1,0 +1,136 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+#headerLine {
+  color: lightblue;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  margin: 20px;
+  text-align: center;
+  color: #aaa;
+}
+
+/* Content layout */
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+.resources {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card container */
+.resource-item {
+  background-color: #1f1f1f; /* dark gray */
+  border: 1.5px solid #3a3a3a;
+  border-radius: 16px;
+  padding: 20px;
+  height: 70vh;
+  width: 22vw;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.resource-item:hover {
+  transform: translateY(-4px);
+}
+
+/* Card content */
+.resource-item img {
+  height: 70px;
+  width: 70px;
+  margin-top: 40px;
+}
+
+.resource-item h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.resource-item p {
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Buttons */
+.ResourceButton {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100px;
+}
+
+.ResourceButton:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+}

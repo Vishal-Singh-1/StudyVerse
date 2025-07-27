@@ -1,0 +1,96 @@
+/* Table layout */
+table {
+  width: 100%;
+  height: 60vh;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgb(23, 23, 23);
+  color: white;
+  border: 1px solid #555;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table cells */
+table, th, td {
+  border: 1px solid #444;
+}
+
+/* Header cells */
+th {
+  background-color: #1c1c1c;
+  padding: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Table rows */
+td {
+  padding: 12px;
+  background-color: rgb(30, 30, 30);
+}
+
+/* Buttons inside table */
+td button {
+  background-color: rgb(80, 80, 80);
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+td button:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+/* Chapter subrow (default hidden or alternate row look) */
+.chapter-row td {
+  background-color: rgb(36, 36, 36);
+}
+
+/* Chapter subtopics list */
+.chapter-row ul {
+  margin: 10px 0;
+  padding: 0 0 0 20px;
+}
+
+.chapter-row ul li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+/* ==== Highlighted Row Variants (based on content clicked) ==== */
+
+/* Notes */
+.notes-table-row, .notes-th, .notes-td {
+  background-color: #7c1f2b !important; /* Dark red */
+  color: white;
+}
+.notes-chapter-row {
+  background-color: #a33a48 !important; /* Slightly lighter red */
+}
+
+/* Important Questions */
+.questions-table-row {
+  background-color: #1a4743 !important; /* Dark teal */
+  color: white;
+}
+.questions-chapter-row {
+  background-color: #2d655f !important; /* Slightly lighter */
+}
+
+/* Videos */
+.videos-table-row {
+  background-color: #624813 !important; /* Dark amber */
+  color: white;
+}
+.videos-chapter-row {
+  background-color: #836023 !important; /* Slightly lighter amber */
+}
+tr, td {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
